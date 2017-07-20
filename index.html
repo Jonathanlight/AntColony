@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="css/materialize.min.css" />
+<link rel="stylesheet" href="style.css" />
+<head>
+
+</head>
+<body>
+<!--<section class="container">-->
+<header>
+    <div class="row">
+
+        <!--<form method="get" id="formSet">-->
+            <!--<input type="submit">-->
+        <!--</form>-->
+
+        <div class="col s3">
+            <fieldset form="formSet">
+                <legend>Legend</legend>
+
+                <div class="switch">
+                    <label>
+                        random
+                        <input type="checkbox" id="size_op">
+                        <span class="lever"></span>
+                        chosen
+                    </label>
+                </div>
+
+                <div id="hgt-and-wdt">
+                    <input type="text" class="col s6" id="grid-ht" placeholder="height">
+                    <input type="text" class="col s6" id="grid-wt" placeholder="width">
+                </div>
+            </fieldset>
+        </div>
+
+        <div id="food" class="col s3">
+            <fieldset>
+                <legend>Food</legend>
+
+                <div class="switch">
+                    <label>
+                        random
+                        <input type="checkbox" data-active="false" id="food_op">
+                        <span class="lever"></span>
+                        chosen
+                    </label>
+                </div>
+
+                <div id="food-coords">
+                    <input type="text" class="col s6" id="food-x" placeholder="x-coord">
+                    <input type="text" class="col s6" id="food-y" placeholder="y-coord">
+                </div>
+            </fieldset>
+
+        </div><!-- /end of food col -->
+
+        <div id="departure" class="col s3">
+            <fieldset>
+                <legend>Departure</legend>
+
+                <div class="switch">
+                    <label>
+                        random
+                        <input type="checkbox" checked id="dep_op">
+                        <span class="lever"></span>
+                        chosen
+                    </label>
+                </div>
+
+                <div id="dep-coords">
+                    <input type="text" class="col s6" id="dep-x" placeholder="x-coord">
+                    <input type="text" class="col s6" id="dep-y" placeholder="y-coord">
+                </div>
+            </fieldset>
+
+        </div><!-- /end of dest col -->
+
+        <div id="walls" class="col s3">
+            <fieldset>
+                <legend>Walls</legend>
+
+                <div class="switch">
+                    <label>
+                        random
+                        <input type="checkbox" data-active="false" id="wall_op">
+                        <span class="lever"></span>
+                        chosen
+                    </label>
+                </div>
+
+                <div id="walls-coords">
+                    <input type="text" class="col s6" id="num-walls" placeholder="out of 60%">
+                </div>
+            </fieldset>
+
+        </div><!-- /end of dest col -->
+
+
+    </div><!-- /end of row -->
+
+    <!--<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>-->
+    <button class="btn waves-effect waves-light" type="submit" id="butt" name="action">Submit
+        <i class="material-icons right">send</i>
+    </button>
+
+</header>
+
+<!--
+        <footer class="page-footer">
+            <div class="container">
+
+            </div>
+        </footer>
+-->
+
+<section id="body">
+    <table>
+    </table>
+</section>
+
+
+<!--<footer></footer>-->
+
+
+<script src="js/jquery.min.js" ></script>
+<script src="js/materialize.min.js" ></script>
+<script src="Misc.js"></script>
+<script src="Map.js" ></script>
+<script src="Cell.js" ></script>
+</body>
+</html>
